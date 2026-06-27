@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GPSJr</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">GJ</span>
+        <div>
+          <h1>GPSJr</h1>
+          <p>Rastreamento IoT</p>
+        </div>
+      </div>
+
+      <section class="panel">
+        <label for="apiBase">API do backend</label>
+        <input id="apiBase" type="url" placeholder="http://localhost:3000" />
+        <button id="saveApi">Salvar API</button>
+      </section>
+
+      <section class="panel stats">
+        <div>
+          <span id="deviceCount">0</span>
+          <small>dispositivos</small>
+        </div>
+        <div>
+          <span id="positionCount">0</span>
+          <small>posicoes</small>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Ultimas posicoes</h2>
+        <ol id="positionList" class="position-list"></ol>
+      </section>
+    </aside>
+
+    <main>
+      <div id="map"></div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
+
