@@ -1,12 +1,12 @@
 :root {
   color-scheme: light;
-  --bg: #f6f7f9;
-  --surface: #ffffff;
-  --text: #17202a;
-  --muted: #697586;
-  --line: #d7dde5;
-  --accent: #147d64;
-  --accent-dark: #0f5f4c;
+  --bg: #E7E1B1;
+  --surface: #FBF5DD;
+  --text: #0b1809;
+  --muted: #0b1809;
+  --line: #E7E1B1;
+  --accent: #306D29;
+  --accent-dark: #0D530E;
 }
 
 * {
@@ -46,7 +46,7 @@ body {
   place-items: center;
   border-radius: 8px;
   background: var(--accent);
-  color: #fff;
+  color: #E7E1B1;
   font-weight: 800;
 }
 
@@ -74,7 +74,7 @@ small {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 14px;
-  background: #fbfcfd;
+  background: #E7E1B1;
 }
 
 label {
@@ -96,7 +96,7 @@ input {
   border: 1px solid var(--line);
   padding: 0 12px;
   color: var(--text);
-  background: #fff;
+  background: var(--surface);
 }
 
 button {
@@ -122,7 +122,7 @@ button:hover {
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 12px;
-  background: #fff;
+  background: var(--surface);
 }
 
 .stats span {
